@@ -1,0 +1,117 @@
+<html>
+  <head>
+  <title>Your Name Here Recipe</title>
+  </head>
+  <body>
+    <header>
+        <img src="https://assets-global.website-files.com/5dcc7f8c449e597ed83356b8/5dcc8a5e5473766654e080bb_5d93d0a059ce656959dab196_logo-full-black-2000-p-500.png">
+        <nav>
+            <ul> 
+                <li>
+                  <a href = "#description">Description</a>
+                </li>
+                <li>
+                  <a href = "#ingredients">Ingredients</a>
+                </li>
+                <li>
+                  <a href = "#directions">Directions</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <aside>
+            <h2 id="ingredients"> Ingredients </h2>
+            <ul>
+              <li>
+                eggs
+              </li>
+              <li>
+                tomatoes
+              </li>
+            </ul>
+        </aside>
+    </section>
+
+    <section>
+        <h2>Shakshuka</h2>
+        <figure>
+            <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Shakshuka_by_Calliopejen1.jpg/220px-Shakshuka_by_Calliopejen1.jpg" >
+        </figure>
+        <figcaption>
+            <a href="https://en.wikipedia.org/wiki/Shakshouka">Shakshouka _ wiki</a>
+        </figcaption>
+    </section>
+    
+    
+    
+    <section>
+        <h2 id ="description">Description</h2>
+        <p>
+          Shakshuka is an easy, healthy breakfast (or any time of day) recipe in Israel and other parts of the Middle East and North Africa. It’s a simple combination of simmering tomatoes, onions, garlic, spices and gently poached eggs. It’s nourishing, filling and one recipe I guarantee you’ll make time and again.
+        </p>
+    </section>
+    
+   
+    
+    <h2 id="directions">Directions</h2>
+    <ol>
+        <li>
+            Heat a deep, large skillet or sauté pan on medium. Slowly warm olive oil in the pan. Add chopped onion, sauté for a few minutes until the onion begins to soften. Add garlic and continue to sauté till mixture is fragrant.   
+        </li>
+        <li>
+            Add the diced bell pepper, sauté for 5-7 minutes over medium until softened.
+        </li>
+        <li>
+            Add tomatoes and tomato paste to pan, stir until blended. Add spices and sugar, stir, and allow mixture to simmer over medium heat for 5-7 minutes until it starts to reduce. 
+            At this point, you can taste the mixture and spice it according to your preferences. Add salt and pepper to taste, more sugar for a sweeter sauce, or more cayenne pepper for a spicier shakshuka (be careful with the cayenne... it is extremely spicy!).
+        </li>
+        <li>
+            Crack the eggs, one at a time, directly over the tomato mixture, making sure to space them evenly over the sauce. I usually place 5 eggs around the outer edge and 1 in the center. The eggs will cook "over easy" style on top of the tomato sauce.
+        </li>
+        <li>
+            Cover the pan. Allow mixture to simmer for 10-15 minutes, or until the eggs are cooked and the sauce has slightly reduced. Keep an eye on the skillet to make sure that the sauce doesn't reduce too much, which can lead to burning.
+        </li>
+    </ol>
+
+    <section>
+        <form>
+            <label for="reviewer">Reviewer</label>
+            <input type="text" id="reviewer">
+
+            <div>
+                <label for="rating">Rating</label>
+                <label for="1">1</label>
+                <input type="radio" id="1" name="rating" checked>
+                <label for="2">2</label>
+                <input type="radio" id="2" name="rating">
+                <label for="3">3</label>
+                <input type="radio" id="3" name="rating">
+                <label for="4">4</label>
+                <input type="radio" id="4" name="rating">
+                <label for="5">5</label>
+                <input type="radio" id="5" name="rating">
+            </div>
+
+
+            <label for="expertise_select">Cooking Expertise</label>
+            <select name="expertise" id = "expertise_select">
+              <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Expertise</option>
+              <option value="Sometimes Cook" >Sometimes Cook</option>
+              <option value="Cook Everyday" >Cook Everyday</option>
+              <option value="Cooking is a Hobby" >Cooking is a Hobby</option>
+              <option value="Professional Chef" >Professional Chef</option>
+            </select>
+
+            <label>Review
+                <textarea name="review" cols="20" rows="10"></textarea>
+            </label>
+        </form>
+    </section>
+
+    <footer>
+        <p>The recipie was originally found <a href="https://downshiftology.com/recipes/shakshuka/" >here</a></p>
+    </footer>
+</body>
+</html>Professional Chef

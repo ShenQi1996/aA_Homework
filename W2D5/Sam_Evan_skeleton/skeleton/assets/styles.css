@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: sandybrown;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.ingredients-list {
+  list-style: square inside;
+  list-style: armenian;
+}
+
+header > img {
+  width: 100px;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  cursor: pointer;
+  outline: none;
+}
+
+#review-form > :last-child {
+  background-color: gold;
+  transition: background-colo 0.5s ease;
+}
+
+#review-form > :last-child:hover {
+  background-color: rgb(51, 32, 218);
+}
+
+.ordered-list > li:nth-child(even) {
+  background: lightgray;
+}
