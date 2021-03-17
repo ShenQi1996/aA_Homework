@@ -26,7 +26,7 @@ class Simon
       round_success_message
       if new_input != @seq
         game_over_message
-        game_over = true
+        @game_over = true
       end
   end
 
