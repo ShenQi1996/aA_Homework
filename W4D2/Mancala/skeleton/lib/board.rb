@@ -24,32 +24,33 @@ class Board
   end
 
   def make_move(start_pos, current_player_name)
-    if current_player_name == @name1
-
-      len = cups[start_pos].length
-      len.times { cups[start_pos].pop }
-      i = 1
-      len.times do 
-        if i + start_pos > 6
-          new_pos = (i + start_pos) % 6
-          cups[new_pos] << :stone
+      stack_stones = cups[start_pos]
+      cups[start_pos] = []
+      index = start_pos
+      while !stack_stones.empty?
+        index += 1
+        index = 0 if index > 13
+        if index == 6 && current_player_name == @name1
+          cups[index] << stack_stones.pop
+        elsif index == 13 && current_player_name == @name2
+          cups[index] << stack_stones.pop
         else
-          cups[start_pos+i] << :stone
+          cups[index] << stack_stones.pop
         end
-        i += 1
       end
-      next_turn(i+start_pos)
-    end
     render
+    next_turn(index)
   end
 
   def next_turn(ending_cup_idx)
     # helper method to determine whether #make_move returns :switch, :prompt, or ending_cup_idx
-    # # if cups[ending_cup_idx].empty?
-    # #   return :switch
-    # else
-    #   return :prompt
-    # end
+    if cups[ending_cup_idx].count == 1
+      return :switch
+    elsif ending_cup_idx == 6 || ending_cup_idx == 13
+      return :prompt
+    else
+      return ending_cup_idx
+    end
   end
 
   def render
